@@ -10,7 +10,7 @@ export default function Header() {
         {/* Logo */}
         <div className="logo-wrapper">
           <Link href="/" className="logo">
-            <img src="/img/logo-light.png" className="logo-img" alt="Logo" />
+            <img src="https://cms.dazzlewheels.ae/public/uploads/rlYaXzwO9NXxDOJ9mMdlkG2gf9chBafmgs17qjuU.png" className="logo-img" alt="Logo" />
           </Link>
         </div>
 
@@ -34,112 +34,30 @@ export default function Header() {
           <ul className="navbar-nav ms-auto">
           
             {/* Static Pages */}
-            <li className="nav-item"><Link href="/" className="nav-link">Home</Link></li>
-            <li className="nav-item"><Link href="/about" className="nav-link">About</Link></li>
+            <li className="nav-item"><Link href="/" className="nav-link">HOME</Link></li>
+            <li className="nav-item"><Link href="/about" className="nav-link">ABOUT US</Link></li>
 
             {/* Services Dropdown */}
             <li className="nav-item dropdown">
               <Link href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Services <i className="ti-angle-down"></i>
+                ALL VEHICLES <i className="ti-angle-down"></i>
               </Link>
               <ul className="dropdown-menu">
-                <li><Link href="/services" className="dropdown-item">Services 01</Link></li>
-                <li><Link href="/services2" className="dropdown-item">Services 02</Link></li>
-                <li className="dropdown-submenu dropdown">
-                  <Link href="#" className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
-                    Service Details <i className="ti-angle-right"></i>
-                  </Link>
-                  <ul className="dropdown-menu">
-                    <li><Link href="/service-details" className="dropdown-item">01</Link></li>
-                    <li><Link href="/service-details2" className="dropdown-item">02</Link></li>
-                    <li><Link href="/service-details3" className="dropdown-item">03</Link></li>
-                    <li><Link href="/service-details4" className="dropdown-item">04</Link></li>
-                  </ul>
-                </li>
+                <li><Link href="/all-vehicles/audi" className="dropdown-item">Audi</Link></li>
+                    <li><Link href="/all-vehicles/ferrari" className="dropdown-item">Ferrari</Link></li>
+                    <li><Link href="/all-vehicles/lamborghini" className="dropdown-item">Lamborghini</Link></li>
+                    <li><Link href="/all-vehicles/mclaren" className="dropdown-item">Mclaren</Link></li>
+                    <li><Link href="/all-vehicles/mercedes" className="dropdown-item">Mercedes</Link></li>
+                    <li><Link href="/all-vehicles/porsche" className="dropdown-item">Porsche</Link></li>
+                    <li><Link href="/all-vehicles/range-rover" className="dropdown-item">Range Rover</Link></li>
+                    <li><Link href="/all-vehicles/rolls-royce" className="dropdown-item">Rolls Royce</Link></li>
               </ul>
             </li>
+            <li className="nav-item"><Link href="/our-services" className="nav-link">OUR SERVICES</Link></li>
+            <li className="nav-item"><Link href="/blogs" className="nav-link">BLOGS</Link></li>
 
-            {/* Cars Dropdown */}
-            <li className="nav-item dropdown">
-              <Link href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Cars <i className="ti-angle-down"></i>
-              </Link>
-              <ul className="dropdown-menu">
-                <li className="dropdown-submenu dropdown">
-                  <Link href="#" className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
-                    Car Grid <i className="ti-angle-right"></i>
-                  </Link>
-                  <ul className="dropdown-menu">
-                    <li><Link href="/cars" className="dropdown-item">01</Link></li>
-                    <li><Link href="/cars2" className="dropdown-item">02</Link></li>
-                    <li><Link href="/cars3" className="dropdown-item">03</Link></li>
-                  </ul>
-                </li>
-                <li><Link href="/cars4" className="dropdown-item">Car Listing</Link></li>
-                <li className="dropdown-submenu dropdown">
-                  <Link href="#" className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
-                    Car Types <i className="ti-angle-right"></i>
-                  </Link>
-                  <ul className="dropdown-menu">
-                    <li><Link href="/car-types" className="dropdown-item">01</Link></li>
-                    <li><Link href="/car-types2" className="dropdown-item">02</Link></li>
-                    <li><Link href="/car-types3" className="dropdown-item">03</Link></li>
-                    <li><Link href="/car-types4" className="dropdown-item">04</Link></li>
-                  </ul>
-                </li>
-                <li className="dropdown-submenu dropdown">
-                  <Link href="#" className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
-                    Car Details <i className="ti-angle-right"></i>
-                  </Link>
-                  <ul className="dropdown-menu">
-                    <li><Link href="/car-details" className="dropdown-item">01</Link></li>
-                    <li><Link href="/car-details2" className="dropdown-item">02</Link></li>
-                    <li><Link href="/car-details3" className="dropdown-item">03</Link></li>
-                    <li><Link href="/car-details4" className="dropdown-item">04</Link></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
 
-            {/* Pages Dropdown */}
-            <li className="nav-item dropdown">
-              <Link href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Pages <i className="ti-angle-down"></i>
-              </Link>
-              <ul className="dropdown-menu">
-                <li><Link href="/team" className="dropdown-item">Team</Link></li>
-                <li className="dropdown-submenu dropdown">
-                  <Link href="#" className="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">
-                    Image Gallery <i className="ti-angle-right"></i>
-                  </Link>
-                  <ul className="dropdown-menu">
-                    <li><Link href="/gallery-image" className="dropdown-item">Grid</Link></li>
-                    <li><Link href="/gallery-image2" className="dropdown-item">Masonry</Link></li>
-                  </ul>
-                </li>
-                <li><Link href="/gallery-video" className="dropdown-item">Video Gallery</Link></li>
-                <li><Link href="/price" className="dropdown-item">Pricing</Link></li>
-                <li><Link href="/faq" className="dropdown-item">FAQ</Link></li>
-                <li><Link href="/testiominals" className="dropdown-item">Testimonials</Link></li>
-                <li><Link href="/team-single" className="dropdown-item">Team Single</Link></li>
-                <li><Link href="/404" className="dropdown-item">404 Page</Link></li>
-              </ul>
-            </li>
-
-            {/* Blog */}
-            <li className="nav-item dropdown">
-              <Link href="#" className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
-                Blog <i className="ti-angle-down"></i>
-              </Link>
-              <ul className="dropdown-menu">
-                <li><Link href="/blog" className="dropdown-item">Blog Grid 01</Link></li>
-                <li><Link href="/blog2" className="dropdown-item">Blog Grid 02</Link></li>
-                <li><Link href="/blog3" className="dropdown-item">Blog List</Link></li>
-                <li><Link href="/post" className="dropdown-item">Post Single</Link></li>
-              </ul>
-            </li>
-
-            <li className="nav-item"><Link href="/contact" className="nav-link">Contact</Link></li>
+            <li className="nav-item"><Link href="/contact" className="nav-link">CONTACT US</Link></li>
           </ul>
 
           {/* Right Call Info */}
@@ -148,7 +66,7 @@ export default function Header() {
               <div className="icon"><i className="flaticon-phone-call"></i></div>
               <div className="text">
                 <p>Need help?</p>
-                <h5><a href="tel:8551004444">855 100 4444</a></h5>
+                <h5><a href="tel:+971527277464">+971527277464</a></h5>
               </div>
             </div>
           </div>

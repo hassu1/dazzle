@@ -1,11 +1,48 @@
 'use client';
 
 import { useEffect } from 'react';
+import { usePathname } from 'next/navigation';
+
 
 export default function Banner() {
+ const pathname = usePathname(); // triggers effect on route change
+
   useEffect(() => {
-    // Optional: Init datepickers or plugins here if needed
-  }, []);
+    if (typeof window !== 'undefined') {
+      const $ = window.$ || window.jQuery;
+
+      if ($ && $.fn.select2 && $.fn.datepicker) {
+        // Initialize Select2 safely
+        $('.select2').each(function (this: HTMLElement) {
+          const $el = $(this);
+          if ($el.hasClass('select2-hidden-accessible')) {
+            $el.select2('destroy');
+          }
+
+          $el.select2({
+            minimumResultsForSearch: Infinity,
+            width: '100%',
+          });
+        });
+
+        // Initialize Datepicker safely
+        $('.datepicker').each(function (this: HTMLElement) {
+          const $el = $(this);
+          try {
+            $el.datepicker('destroy');
+          } catch (err) {
+            // Ignore if already destroyed or not initialized
+          }
+
+          $el.datepicker({
+            orientation: 'top',
+          });
+        });
+      } else {
+        console.warn('jQuery, Select2, or Datepicker not available on window.');
+      }
+    }
+  }, [pathname]); // Re-initialize on route change
 
   return (
     <section
@@ -141,6 +178,7 @@ export default function Banner() {
               </div>
             </div>
           </div>
+          
         </div>
       </div>
     </section>

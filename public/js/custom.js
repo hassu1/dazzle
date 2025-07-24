@@ -62,10 +62,10 @@ $(function () {
             logo = $(".navbar .logo> img");
         if (bodyScroll > 100) {
             navbar.addClass("nav-scroll");
-            logo.attr('src', 'img/logo-light.png');
+            logo.attr('src', 'https://cms.dazzlewheels.ae/public/uploads/rlYaXzwO9NXxDOJ9mMdlkG2gf9chBafmgs17qjuU.png');
         } else {
             navbar.removeClass("nav-scroll");
-            logo.attr('src', 'img/logo-light.png');
+            logo.attr('src', 'https://cms.dazzlewheels.ae/public/uploads/rlYaXzwO9NXxDOJ9mMdlkG2gf9chBafmgs17qjuU.png');
         }
     });
    

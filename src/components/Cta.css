@@ -1,0 +1,162 @@
+.s-subscribe {
+	position: relative;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.s-subscribe .container {
+	position: relative;
+	z-index: 3;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	width: 100%;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	min-height: 526px;
+	color: #fff
+}
+
+.s-subscribe .container .title {
+	color: #fff;
+	margin-bottom: 19px
+}
+
+.s-subscribe .container img {
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+	margin-right: -95px
+}
+.subscribe-form {
+    position: relative;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+	    gap: 17px;
+}
+.subscribe-form i {
+    position: absolute;
+    top: 48%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 18px;
+    z-index: 2;
+    font-size: 17px;
+    pointer-events: none;
+    color: #9ca4ab;
+}
+.subscribe-form .inp-form {
+	height: 50px;
+    background-color: transparent;
+    border-radius: 0;
+    display: block;
+    border: 2px solid #dbdbdb;
+    -webkit-transition: .35s ease;
+    transition: .35s ease;
+    /* color: #9ca4ab; */
+    font-size: 16px;
+    width: 100%;
+    max-width: 323px;
+    padding: 0 20px 0 44px;
+    font-weight: 700;
+}
+.s-subscribe.s-dark-subscribe .subscribe-form .inp-form {
+    border-color: rgba(255, 255, 255, 0.4);
+}
+
+.s-subscribe .subscribe-form .inp-form {
+    color: #fff;
+}
+.s-subscribe .subscribe-form input.inp-form::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.7)
+}
+
+.s-subscribe .subscribe-form input.inp-form::placeholder {
+	color: rgba(255, 255, 255, 0.7)
+}
+
+.s-subscribe .subscribe-form .inp-form {
+	color: #fff
+}
+
+.s-subscribe.s-dark-subscribe .container {
+	min-height: 505px
+}
+
+.s-subscribe.s-dark-subscribe .subscribe-left {
+	padding-bottom: 50px
+}
+
+.s-subscribe.s-dark-subscribe:after,
+.s-subscribe.s-dark-subscribe:before {
+	background-color: #161616
+}
+
+.s-subscribe.s-dark-subscribe .subscribe-effect {
+	mix-blend-mode: overlay
+}
+
+.s-subscribe.s-dark-subscribe .mask
+ {
+    background-image: url(/img/dark-effect-subscribe.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mask {
+    background-color: #192330;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.8;
+    width: 100%;
+    z-index: 1;
+    height: 100%;
+    pointer-events: none;
+}
+
+.s-subscribe.s-dark-subscribe .subscribe-form .inp-form {
+	border-color: rgba(255, 255, 255, 0.4)
+}
+
+.s-subscribe.s-dark-subscribe .subscribe-form .btn-form {
+	color: #ecb841
+}
+
+.subscribe-effect {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-position: bottom center;
+	background-size: cover;
+	background-repeat: no-repeat
+}
+
+.subscribe-left {
+	padding-bottom: 34px;
+	width: 50%
+}
+
+.subscribe-left p {
+	max-width: 340px;
+	margin-bottom: 22px
+}
+
+.s-subscribe .container .title {
+    color: #fff;
+    margin-bottom: 19px;
+}

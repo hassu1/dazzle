@@ -1,101 +1,147 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
 export default function Footer() {
   return (
+    // <!-- Footer -->
     <footer className="footer clearfix">
       <div className="container">
-        {/* Contact Info Section */}
+        {/* <!-- first footer --> */}
         <div className="first-footer">
           <div className="row">
             <div className="col-md-12">
-              <div className="footer-contact-links-wrapper d-flex flex-wrap justify-content-between">
-                {/* Phone */}
-                <div className="footer-contact-link-wrapper d-flex align-items-center mb-3">
-                  <div className="icon-footer me-3"><i className="flaticon-phone-call"></i></div>
-                  <div>
-                    <h6>Call us</h6>
-                    <p>+971 52-333-4444</p>
+              <div className="links dark footer-contact-links">
+                <div className="footer-contact-links-wrapper">
+                  <div className="footer-contact-link-wrapper">
+                    <div className="image-wrapper footer-contact-link-icon">
+                      <div className="icon-footer">
+                        {" "}
+                        <i className="flaticon-phone-call"></i>{" "}
+                      </div>
+                    </div>
+                    <div className="footer-contact-link-content">
+                      <h6>Call us</h6>
+                      <p>+971527277464</p>
+                    </div>
                   </div>
-                </div>
-                {/* Email */}
-                <div className="footer-contact-link-wrapper d-flex align-items-center mb-3">
-                  <div className="icon-footer me-3"><i className="omfi-envelope"></i></div>
-                  <div>
-                    <h6>Email</h6>
-                    <p>info@renax.com</p>
+                  <div className="footer-contact-links-divider"></div>
+                  <div className="footer-contact-link-wrapper">
+                    <div className="image-wrapper footer-contact-link-icon">
+                      <div className="icon-footer">
+                        {" "}
+                        <i className="omfi-envelope"></i>{" "}
+                      </div>
+                    </div>
+                    <div className="footer-contact-link-content">
+                      <h6>Write to us</h6>
+                      <p>info@dazzlewheels.ae</p>
+                    </div>
                   </div>
-                </div>
-                {/* Location */}
-                <div className="footer-contact-link-wrapper d-flex align-items-center mb-3">
-                  <div className="icon-footer me-3"><i className="omfi-location"></i></div>
-                  <div>
-                    <h6>Address</h6>
-                    <p>Dubai, Water Tower, Office 123</p>
+                  <div className="footer-contact-links-divider"></div>
+                  <div className="footer-contact-link-wrapper">
+                    <div className="image-wrapper footer-contact-link-icon">
+                      <div className="icon-footer">
+                        {" "}
+                        <i className="omfi-location"></i>{" "}
+                      </div>
+                    </div>
+                    <div className="footer-contact-link-content">
+                      <h6>Address</h6>
+                      <p>Office 6, Crystal Tower, Business Bay, Dubai, UAE</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-        {/* Footer Content */}
-        <div className="second-footer mt-5">
+        {/* <!-- second footer --> */}
+        <div className="second-footer">
           <div className="row">
-            {/* About / Logo */}
-            <div className="col-md-4">
-              <div className="footer-logo mb-3">
-                <img src="/img/logo-light.png" alt="Renax Logo" />
+            {/* <!-- about & social icons --> */}
+            <div className="col-md-4 widget-area">
+              <div className="widget clearfix">
+                <div className="footer-logo">
+                  <img src="https://cms.dazzlewheels.ae/public/uploads/rlYaXzwO9NXxDOJ9mMdlkG2gf9chBafmgs17qjuU.png" alt="" />
+                </div>
+                {/* <!-- <div className="footer-logo"><h2>CARE<span>X</span></h2></div> --> */}
+                <div className="widget-text">
+                  <p>
+                    Dazzle Wheels is the best luxury car rental services in Dubai, we have a big fleet of 50 sports and luxury vehicles, we are known for the professional services, we offer a wide range of supercars, luxury cars & Suvs in the market for daily rental.
+                  </p>
+                  <div className="social-icons">
+                    <ul className="list-inline">
+                      <li>
+                        <Link href="#">
+                          <i className="fa-brands fa-whatsapp"></i>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#">
+                          <i className="fa-brands fa-facebook-f"></i>
+                        </Link>
+                      </li>
+                      <li>
+                        <Link href="#">
+                          <i className="fa-brands fa-youtube"></i>
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
-              <p>
-                Rent a car imperdiet sapien porttito the bibenum ellentesue the commodo erat nesuen.
-              </p>
-              <div className="social-icons mt-3">
-                <ul className="list-inline d-flex gap-3">
-                  <li><a href="#"><i className="fa-brands fa-whatsapp"></i></a></li>
-                  <li><a href="#"><i className="fa-brands fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i className="fa-brands fa-youtube"></i></a></li>
+            </div>
+            {/* <!-- quick links --> */}
+            <div className="col-md-3 col-12 offset-2 widget-area">
+              <div className="widget clearfix usful-links">
+                <h3 className="widget-title">Brands</h3>
+                <ul>
+                  <li><Link href="/all-vehicles/audi">Audi</Link></li>
+                    <li><Link href="/all-vehicles/ferrari">Ferrari</Link></li>
+                    <li><Link href="/all-vehicles/lamborghini">Lamborghini</Link></li>
+                    <li><Link href="/all-vehicles/mclaren">Mclaren</Link></li>
+                    <li><Link href="/all-vehicles/mercedes">Mercedes</Link></li>
+                    <li><Link href="/all-vehicles/porsche">Porsche</Link></li>
+                    <li><Link href="/all-vehicles/range-rover">Range Rover</Link></li>
+                    <li><Link href="/all-vehicles/rolls-royce">Rolls Royce</Link></li>
                 </ul>
               </div>
             </div>
-
-            {/* Quick Links */}
-            <div className="col-md-3 offset-md-1">
-              <h3 className="widget-title">Quick Links</h3>
-              <ul className="list-unstyled">
-                <li><Link href="/about">About</Link></li>
-                <li><Link href="/cars">Cars</Link></li>
-                <li><Link href="/car-types">Car Types</Link></li>
-                <li><Link href="/team">Team</Link></li>
-                <li><Link href="/contact">Contact</Link></li>
-              </ul>
-            </div>
-
-            {/* Subscribe Form */}
-            <div className="col-md-4">
-              <h3 className="widget-title">Subscribe</h3>
-              <p>Want to be notified about our services? Sign up and get updates by email.</p>
-              <form action="#" className="d-flex mt-3">
-                <input
-                  type="email"
-                  className="form-control me-2"
-                  placeholder="Email Address"
-                  required
-                />
-                <button type="submit" className="btn btn-primary">
-                  <i className="ti-arrow-top-right"></i>
-                </button>
-              </form>
+            {/* <!-- subscribe --> */}
+            <div className="col-md-3 col-12 widget-area">
+              <div className="widget clearfix usful-links">
+                <h3 className="widget-title">Quick Links</h3>
+                <ul>
+                  <li>
+                    <Link href="about">About Us</Link>
+                  </li>
+                  <li>
+                    <Link href="our-services">Our Services</Link>
+                  </li>
+                  <li>
+                    <Link href="contact">Contact</Link>
+                  </li>
+                  <li>
+                    <Link href="privacy-policy">Privacy Policy</Link>
+                  </li>
+                  <li>
+                    <Link href="terms">Terms & Conditions</Link>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-
-        {/* Copyright */}
-        <div className="bottom-footer-text text-center mt-5 pt-4 border-top">
-          <p className="mb-0">
-            &copy; 2025 <a href="#">Renax</a>. All rights reserved.
-          </p>
+        {/* <!-- bottom footer --> */}
+        <div className="bottom-footer-text">
+          <div className="row copyright">
+            <div className="col-md-12">
+              <p className="mb-0">
+                &copy;2025 <Link href="#">Dazzle Wheels</Link>. All rights reserved.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

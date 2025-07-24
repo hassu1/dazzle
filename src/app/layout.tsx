@@ -1,12 +1,14 @@
+import { Metadata } from "next";
 import "./globals.css";
 import Script from "next/script";
 
-export const metadata = {
-  title: "RENAX",
-  icons: {
-    icon: "/favicon.png",
-  },
+
+// Use metadata export for SEO tags
+export const metadata: Metadata = {
+  title: 'Dazzle Wheels | Home Page',
+  description: 'Welcome to Dazzle Wheels, your premium luxury car rental service in Dubai.',
 };
+
 
 export default function RootLayout({
   children,
@@ -23,6 +25,7 @@ export default function RootLayout({
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
+        <link rel="icon" href="/img/favicon.png" />
 
         {/* Styles */}
         <link

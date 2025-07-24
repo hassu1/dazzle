@@ -1,0 +1,8 @@
+.process .item {
+    position: relative;
+    padding: 50px 30px;
+    border-radius: 20px 20px 20px 0;
+    background: #222;
+    z-index: 2;
+    height: 270px;
+}
