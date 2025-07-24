@@ -67,7 +67,7 @@ export default function AboutSection(){
                     />
                         {/* <img src="img/about.jpg" className="img-fluid" alt="" /> */}
                         <div className="curv-butn icon-bg">
-                            <a href="https://youtu.be/1LxcTt1adfY" className="vid">
+                            <a href="#!" className="vid">
                                 <div className="icon"> <i className="ti-control-play"></i> </div>
                             </a>
                             <div className="br-left-top">
