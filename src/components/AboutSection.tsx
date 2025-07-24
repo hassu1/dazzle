@@ -12,8 +12,8 @@ export default function AboutSection(){
                         <div className="section-subtitle">Dazzle Wheels</div>
                         <div className="section-title">ABOUT COMPANY</div>
                         <p className="mb-30" style={{ fontSize: '17px'}}>Dazzle Wheels Car Rental is the best luxury car rental services in Dubai, we have a big fleet of 50 sports and luxury vehicles, we are known for the professional services we offer, We offer a wide range of supercars, luxury cars & Suvs in the market for daily rental, The difference is in the details and that’s why our car rental services are the best in town, with a team of experts and quality trained professionals in the tourism and automobile industry, we stand out for quality and good taste, to offer you with a unique experience, get in touch with us to know more.</p>
-                        <ul className="list-unstyled list mb-30 d-flex align-items-center justify-content-between flex-wrap">
-                            <li>
+                        <ul className="list-unstyled list mb-30 d-flex align-items-center justify-content-between">
+                            <li style={{ marginTop:'0.6rem;'}}>
                                 <div className="list-icon"> <span className="ti-check"></span> </div>
                                 <div className="list-text">
                                     <p>Luxury Cars</p>
@@ -32,8 +32,8 @@ export default function AboutSection(){
                                 </div>
                             </li>
                         </ul> 
-                         <ul className="list-unstyled list d-flex align-items-center justify-content-between flex-wrap">
-                              <li>
+                         <ul className="list-unstyled list d-flex align-items-center justify-content-between">
+                              <li style={{ marginTop:'0.6rem;'}}>
                                 <div className="list-icon"> <span className="ti-check"></span> </div>
                                 <div className="list-text">
                                     <p>SUV Cars</p>

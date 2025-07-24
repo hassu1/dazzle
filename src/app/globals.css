@@ -6,3 +6,11 @@
     z-index: 2;
     height: 270px;
 }
+html,body{
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  .s-subscribe .container img{display:none;}
+  .subscribe-left{width:100%;}
+}
