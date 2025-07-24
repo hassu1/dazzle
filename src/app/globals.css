@@ -12,5 +12,5 @@ html,body{
 
 @media only screen and (max-width: 600px) {
   .s-subscribe .container img{display:none;}
-  .subscribe-left{width:100%;}
+  .subscribe-left{width:100%!important;}
 }
