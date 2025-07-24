@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useEffect } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link'
@@ -76,7 +77,7 @@ export default function OurFleet() {
                 {/* ← your car items here — keep them same as before → */}
                 <div className="item">
                   {" "}
-                  <img src="img/blog/8.jpg" className="img-fluid" alt="" />
+                 <Image src="/img/blog/8.jpg" className="img-fluid" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }}  />
                   <div className="bottom-fade"></div>
                   <div className="title">
                     <h4>Bugatti Mistral W16</h4>
@@ -136,7 +137,7 @@ export default function OurFleet() {
                 </div>
                 <div className="item">
                   {" "}
-                  <img src="img/blog/6.jpg" className="img-fluid" alt="" />
+                 <Image src="/img/blog/6.jpg" className="img-fluid" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }}  />
                   <div className="bottom-fade"></div>
                   <div className="title">
                     <h4>Audi RS7 Sportback</h4>
@@ -196,7 +197,7 @@ export default function OurFleet() {
                 </div>
                 <div className="item">
                   {" "}
-                  <img src="img/blog/9.jpg" className="img-fluid" alt="" />
+                 <Image src="/img/blog/9.jpg" className="img-fluid" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }}  />
                   <div className="bottom-fade"></div>
                   <div className="title">
                     <h4>Bugatti Mistral W16</h4>
@@ -256,7 +257,7 @@ export default function OurFleet() {
                 </div>
                 <div className="item">
                   {" "}
-                  <img src="img/blog/10.jpg" className="img-fluid" alt="" />
+                 <Image src="/img/blog/10.jpg" className="img-fluid" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }}  />
                   <div className="bottom-fade"></div>
                   <div className="title">
                     <h4>AUDI Q8</h4>
@@ -316,7 +317,7 @@ export default function OurFleet() {
                 </div>
                 <div className="item">
                   {" "}
-                  <img src="img/blog/11.jpg" className="img-fluid" alt="" />
+                 <Image src="/img/blog/11.jpg" className="img-fluid" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }}  />
                   <div className="bottom-fade"></div>
                   <div className="title">
                     <h4>Bentley Bentayga</h4>
@@ -376,7 +377,7 @@ export default function OurFleet() {
                 </div>
                 <div className="item">
                   {" "}
-                  <img src="img/blog/7.jpg" className="img-fluid" alt="" />
+                 <Image src="/img/blog/7.jpg" className="img-fluid" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }}  />
                   <div className="bottom-fade"></div>
                   <div className="title">
                     <h4>Aston Martin DBS</h4>

@@ -25,7 +25,7 @@ export default function Cta() {
             <span>Subscribe</span>
           </h2>
           <p>
-            Subscribe us and you won't miss the new arrivals, as well as
+            Subscribe us and you won&apos;t miss the new arrivals, as well as
             discounts and sales.
           </p>
           <form className="subscribe-form">
@@ -37,20 +37,20 @@ export default function Cta() {
               placeholder="E-mail"
               required
             />
-               <button type="submit" className="booking-button mb-15" style={{ lineHeight:'auto'}}>
-                        Rent Now
-                      </button>
+            <button type="submit" className="booking-button mb-15" style={{ lineHeight:'auto'}}>
+              Rent Now
+            </button>
           </form>
         </div>
 
         <Image
-        className="wow fadeInRightBlur"
-        src="/img/carr.webp"
-        alt="Subscribe Illustration"
-        width={500}
-        height={400}
-        loading="lazy"
-        style={{ width:'100%', height:'100%'}}
+          className="wow fadeInRightBlur"
+          src="/img/carr.webp"
+          alt="Subscribe Illustration"
+          width={500}
+          height={400}
+          loading="lazy"
+          style={{ width:'100%', height:'100%' }}
         />
 
       </div>

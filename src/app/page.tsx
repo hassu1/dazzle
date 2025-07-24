@@ -3,7 +3,7 @@ import Footer from '@components/components/Footer';
 import BannerForm from '@components/components/Banner';
 import AboutSection from '@components/components/AboutSection';
 import OurFleet from '@components/components/OurFleet';
-import OurServices from '@components/components/OurServices';
+
 import Process from '@components/components/Process';
 import FleetCategory from '@components/components/FleetCategory';
 import Cta from '@components/components/Cta';

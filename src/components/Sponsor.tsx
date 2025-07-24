@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -78,28 +79,28 @@ export default function Sponsor(){
                 <div className="col-lg-12 col-md-12">
                     <div className="owl-carousel owl-theme">
                         <div className="clients-logo">
-                            <a href="#0"><img src="img/clients/1.png" alt="" /></a>
+                            <Image src="/img/clients/1.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-fluid" />
                         </div>
                         <div className="clients-logo">
-                            <a href="#0"><img src="img/clients/2.png" alt="" /></a>
+                            <Image src="/img/clients/2.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-fluid" />
                         </div>
                         <div className="clients-logo">
-                            <a href="#0"><img src="img/clients/3.png" alt="" /></a>
+                            <Image src="/img/clients/3.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-fluid" />
                         </div>
                         <div className="clients-logo">
-                            <a href="#0"><img src="img/clients/4.png" alt="" /></a>
+                            <Image src="/img/clients/4.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-fluid" />
                         </div>
                         <div className="clients-logo">
-                            <a href="#0"><img src="img/clients/5.png" alt="" /></a>
+                            <Image src="/img/clients/5.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-fluid" />
                         </div>
                         <div className="clients-logo">
-                            <a href="#0"><img src="img/clients/6.png" alt="" /></a>
+                            <Image src="/img/clients/6.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-fluid" />
                         </div>
                         <div className="clients-logo">
-                            <a href="#0"><img src="img/clients/7.png" alt="" /></a>
+                            <Image src="/img/clients/7.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-fluid" />
                         </div>
                         <div className="clients-logo">
-                            <a href="#0"><img src="img/clients/8.png" alt="" /></a>
+                            <Image src="/img/clients/8.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-fluid" />
                         </div>
                     </div>
                 </div>

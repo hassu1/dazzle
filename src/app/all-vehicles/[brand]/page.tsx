@@ -1,4 +1,5 @@
 // app/all-vehicles/[brand]/page.tsx
+
 "use client";
 
 import { useSearchParams } from "next/navigation";
@@ -6,14 +7,8 @@ import Image from "next/image";
 import { useMemo } from "react";
 import Header from '@components/components/Header';
 import Footer from '@components/components/Footer';
-
-import { Metadata } from 'next';
-import Head from 'next/head';
- 
-
-interface Props {
-  params: { brand: string };
-}
+import Link from 'next/link';
+import { useParams } from 'next/navigation';
 
 const cars = [
   {
@@ -80,14 +75,17 @@ const cars = [
 
 const ITEMS_PER_PAGE = 9;
 
-export default function BrandVehiclesPage({ params }: Props) {
-  const { brand } = params;
+export default function BrandVehiclesPage() {
+  const { brand } = useParams();  // Get brand from the dynamic route
   const searchParams = useSearchParams();
   const currentPage = parseInt(searchParams.get("page") || "1");
 
+  // Ensure that brand is a string before calling toLowerCase
+  const brandLower = Array.isArray(brand) ? brand[0].toLowerCase() : brand?.toLowerCase();
+
   const filteredCars = useMemo(
-    () => cars.filter((car) => car.brand.toLowerCase() === brand.toLowerCase()),
-    [brand]
+    () => cars.filter((car) => car.brand.toLowerCase() === brandLower),
+    [brandLower]
   );
 
   const totalPages = Math.ceil(filteredCars.length / ITEMS_PER_PAGE);
@@ -101,9 +99,7 @@ export default function BrandVehiclesPage({ params }: Props) {
 
   return (
     <>
-
-
-        <Header />
+      <Header />
 
       <section
         className="banner-header section-padding bg-img"
@@ -113,7 +109,7 @@ export default function BrandVehiclesPage({ params }: Props) {
           backgroundPosition: "center",
           position: "relative",
           padding: "130px 0px",
-          height:"auto"
+          height: "auto"
         }}
       >
         {/* Overlay */}
@@ -135,7 +131,7 @@ export default function BrandVehiclesPage({ params }: Props) {
               <div className="col-md-12 text-center text-white">
                 <h6>Select Your Car</h6>
                 <h1>
-                  <span style={{ color: "#f0c000" }}>All Vehicles</span>
+                  <span style={{ color: "#f0c000" }}>&quot;All Vehicles&quot;</span>
                 </h1>
               </div>
             </div>
@@ -147,17 +143,17 @@ export default function BrandVehiclesPage({ params }: Props) {
         <div className="container">
           <div className="row">
             {paginatedCars.length === 0 ? (
-              <p className="text-center w-100">No cars found for "{brand}"</p>
+              <p className="text-center w-100">No cars found for &quot;{brand}&quot;</p>
             ) : (
               paginatedCars.map((car) => (
                 <div key={car.id} className="col-lg-4 col-md-6 mb-60">
                   <div className="item">
                     <div className="project-date">
-                      <a href="/car-details" className="br">
+                      <Link href="/car-details" className="br">
                         <div className="year">
                           ${car.price} <span>day</span>
                         </div>
-                      </a>
+                      </Link>
                       <div className="br-left-top">
                         <svg viewBox="0 0 11 11" className="w-11 h-11">
                           <path
@@ -175,7 +171,7 @@ export default function BrandVehiclesPage({ params }: Props) {
                         </svg>
                       </div>
                     </div>
-                    <a href="/car-details" className="img">
+                    <Link href="/car-details" className="img">
                       <Image
                         src={car.image}
                         alt={car.name}
@@ -187,10 +183,10 @@ export default function BrandVehiclesPage({ params }: Props) {
                       <div className="arrow">
                         <i className="ti-arrow-right"></i>
                       </div>
-                    </a>
+                    </Link>
                     <div className="info">
                       <div className="title">
-                        <a href="/car-details">{car.name}</a>
+                        <Link href="/car-details">{car.name}</Link>
                       </div>
                       <div className="details">
                         <span>
@@ -225,29 +221,29 @@ export default function BrandVehiclesPage({ params }: Props) {
                 <ul className="pagination-wrap">
                   {currentPage > 1 && (
                     <li>
-                      <a href={createPageLink(currentPage - 1)}>
+                      <Link href={createPageLink(currentPage - 1)}>
                         <i className="ti-angle-left"></i>
-                      </a>
+                      </Link>
                     </li>
                   )}
                   {Array.from({ length: totalPages }).map((_, i) => {
                     const page = i + 1;
                     return (
                       <li key={page}>
-                        <a
+                        <Link
                           href={createPageLink(page)}
                           className={page === currentPage ? "active" : ""}
                         >
                           {page}
-                        </a>
+                        </Link>
                       </li>
                     );
                   })}
                   {currentPage < totalPages && (
                     <li>
-                      <a href={createPageLink(currentPage + 1)}>
+                      <Link href={createPageLink(currentPage + 1)}>
                         <i className="ti-angle-right"></i>
-                      </a>
+                      </Link>
                     </li>
                   )}
                 </ul>

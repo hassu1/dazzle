@@ -6,8 +6,6 @@ import Image from "next/image";
 export default function OurService() {
   return (
     <>
-
-
       <Header />
 
       <section
@@ -83,10 +81,10 @@ export default function OurService() {
                 />
                 <h3 className="text-white mt-3 text-center">Hotel Booking</h3>
                 <p className="text-white text-center">
-                  We can help you book hotels, We're passionate about travel and
-                  aim to inspire millions of travelers across the globe. So,
-                  when it comes to booking the perfect hotel, we've got you
-                  covered.
+                  We can help you book hotels, We&apos;re passionate about
+                  travel and aim to inspire millions of travelers across the
+                  globe. So, when it comes to booking the perfect hotel, we&apos;ve
+                  got you covered.
                 </p>
               </div>
             </div>

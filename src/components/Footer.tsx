@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -63,7 +64,7 @@ export default function Footer() {
             <div className="col-md-4 widget-area">
               <div className="widget clearfix">
                 <div className="footer-logo">
-                  <img src="https://cms.dazzlewheels.ae/public/uploads/rlYaXzwO9NXxDOJ9mMdlkG2gf9chBafmgs17qjuU.png" alt="" />
+                  <Image src="/img/dzzle.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} />
                 </div>
                 {/* <!-- <div className="footer-logo"><h2>CARE<span>X</span></h2></div> --> */}
                 <div className="widget-text">
@@ -109,7 +110,7 @@ export default function Footer() {
               </div>
             </div>
             {/* <!-- subscribe --> */}
-            <div className="col-md-3 col-12 widget-area">
+            <div className="col-md-3 col-12 ml-4 widget-area">
               <div className="widget clearfix usful-links">
                 <h3 className="widget-title">Quick Links</h3>
                 <ul>

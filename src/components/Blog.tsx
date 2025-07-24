@@ -1,5 +1,5 @@
 'use client';
-
+import Image from 'next/image';
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -82,7 +82,7 @@ const pathname = usePathname();
                 <div className="item">
                   <div className="img">
                     {" "}
-                    <img src="img/blog/03.jpg" alt="" />{" "}
+                    <Image  src="/img/blog/03.jpg" alt=""  width={800} height={500} style={{ width: '100%', height: 'auto' }}  className="img-fluid" /> {" "}
                   </div>
                   <div className="wrapper">
                     <div className="date">
@@ -114,7 +114,7 @@ const pathname = usePathname();
                 <div className="item">
                   <div className="img">
                     {" "}
-                    <img src="img/blog/04.jpg" alt="" />{" "}
+                    <Image  src="/img/blog/04.jpg" alt=""  width={800} height={500} style={{ width: '100%', height: 'auto' }}  className="img-fluid" />{" "}
                   </div>
                   <div className="wrapper">
                     <div className="date">
@@ -146,7 +146,7 @@ const pathname = usePathname();
                 <div className="item">
                   <div className="img">
                     {" "}
-                    <img src="img/blog/05.jpg" alt="" />{" "}
+                    <Image  src="/img/blog/05.jpg" alt=""  width={800} height={500} style={{ width: '100%', height: 'auto' }}  className="img-fluid" />{" "}
                   </div>
                   <div className="wrapper">
                     <div className="date">
@@ -178,7 +178,7 @@ const pathname = usePathname();
                 <div className="item">
                   <div className="img">
                     {" "}
-                    <img src="img/blog/06.jpg" alt="" />{" "}
+                    <Image  src="/img/blog/06.jpg" alt=""  width={800} height={500} style={{ width: '100%', height: 'auto' }}  className="img-fluid" />{" "}
                   </div>
                   <div className="wrapper">
                     <div className="date">
@@ -210,7 +210,7 @@ const pathname = usePathname();
                 <div className="item">
                   <div className="img">
                     {" "}
-                    <img src="img/blog/01.jpg" alt="" />{" "}
+                    <Image  src="/img/blog/01.jpg" alt=""  width={800} height={500} style={{ width: '100%', height: 'auto' }}  className="img-fluid" />{" "}
                   </div>
                   <div className="wrapper">
                     <div className="date">
@@ -242,7 +242,7 @@ const pathname = usePathname();
                 <div className="item">
                   <div className="img">
                     {" "}
-                    <img src="img/blog/02.jpg" alt="" />{" "}
+                    <Image  src="/img/blog/02.jpg" alt=""  width={800} height={500} style={{ width: '100%', height: 'auto' }}  className="img-fluid" />{" "}
                   </div>
                   <div className="wrapper">
                     <div className="date">

@@ -31,7 +31,8 @@
 .s-subscribe .container img {
 	-ms-flex-item-align: end;
 	align-self: flex-end;
-	margin-right: -95px
+	margin-right: -95px;
+	padding-left:100px;
 }
 .subscribe-form {
     position: relative;

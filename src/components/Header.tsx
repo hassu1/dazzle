@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Header() {
 
@@ -10,7 +11,7 @@ export default function Header() {
         {/* Logo */}
         <div className="logo-wrapper">
           <Link href="/" className="logo">
-            <img src="https://cms.dazzlewheels.ae/public/uploads/rlYaXzwO9NXxDOJ9mMdlkG2gf9chBafmgs17qjuU.png" className="logo-img" alt="Logo" />
+            <Image src="/img/dzzle.png" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} />
           </Link>
         </div>
 

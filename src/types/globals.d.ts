@@ -3,7 +3,7 @@ export {};
 
 declare global {
   interface Window {
-    $: any;
-    jQuery: any;
+    $: typeof import('jquery');
+    jQuery: typeof import('jquery');
   }
 }

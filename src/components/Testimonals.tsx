@@ -1,5 +1,6 @@
 "use client";
 
+import Image from 'next/image';
 import { useEffect } from "react";
 import { usePathname } from "next/navigation";
 
@@ -99,7 +100,7 @@ export default function Testimonals(){
                             </div>
                             <div className="info mt-30">
                                 <div className="img-curv">
-                                    <div className="img"> <img src="img/team/1.jpg" alt="" /> </div>
+                                    <div className="img"> <Image src="/img/team/1.jpg" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-responsive" /> </div>
                                     <div className="shap-left-top">
                                         <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-11 h-11">
                                             <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
@@ -141,7 +142,7 @@ export default function Testimonals(){
                             </div>
                             <div className="info mt-30">
                                 <div className="img-curv">
-                                    <div className="img"> <img src="img/team/4.jpg" alt="" /> </div>
+                                    <div className="img"> <Image src="/img/team/4.jpg" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-responsive" /> </div>
                                     <div className="shap-left-top">
                                         <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-11 h-11">
                                             <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
@@ -183,7 +184,7 @@ export default function Testimonals(){
                             </div>
                             <div className="info mt-30">
                                 <div className="img-curv">
-                                    <div className="img"> <img src="img/team/6.jpg" alt="" /> </div>
+                                    <div className="img"> <Image src="/img/team/6.jpg" alt="" width={800} height={500} style={{ width: '100%', height: 'auto' }} className="img-responsive" /> </div>
                                     <div className="shap-left-top">
                                         <svg viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-11 h-11">
                                             <path d="M11 1.54972e-06L0 0L2.38419e-07 11C1.65973e-07 4.92487 4.92487 1.62217e-06 11 1.54972e-06Z" fill="#1b1b1b"></path>
